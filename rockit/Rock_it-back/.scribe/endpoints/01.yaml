@@ -1,0 +1,836 @@
+name: 'ARTIST '
+description: |-
+
+  APIs to manage the Artists.
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: 'api/user/{api_token}'
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      api_token:
+        name: api_token
+        description: ''
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      api_token: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 404
+        content: |-
+          {
+              "message": "No query results for model [App\\Models\\User].",
+              "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+              "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+              "line": 408,
+              "trace": [
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+                      "line": 384,
+                      "function": "prepareException",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php",
+                      "line": 54,
+                      "function": "render",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php",
+                      "line": 51,
+                      "function": "render",
+                      "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 143,
+                      "function": "handleException",
+                      "class": "Illuminate\\Routing\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php",
+                      "line": 50,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+                      "line": 152,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+                      "line": 128,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+                      "line": 80,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 798,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 775,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 739,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+                      "line": 728,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 200,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php",
+                      "line": 62,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 175,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php",
+                      "line": 144,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 92,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 209,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 166,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php",
+                      "line": 95,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 124,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 71,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php",
+                      "line": 49,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php",
+                      "line": 51,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Container/Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Container/Container.php",
+                      "line": 662,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 208,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/symfony/console/Command/Command.php",
+                      "line": 312,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+                      "line": 178,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/symfony/console/Application.php",
+                      "line": 1040,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/symfony/console/Application.php",
+                      "line": 314,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/symfony/console/Application.php",
+                      "line": 168,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php",
+                      "line": 200,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "/home/dino/Epitech/ROCK-IT/C-COD-260-PAR-2-2-ecp-dino.balletti/Rock_it-back/artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/search/{name}'
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: dolor
+        type: string
+        custom: []
+    cleanUrlParameters:
+      name: dolor
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/artists
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display all Artists'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":3,"name":"Mos Eisley Cantina Band","email":"mecb@mail.com","email_verified_at":null,"role":"artist","api_token":null,"created_at":"2023-06-08T14:49:14.000000Z","updated_at":"2023-06-09T07:54:47.000000Z","banner":"https:\/\/res.cloudinary.com\/dnzb3s4a0\/image\/upload\/v1685457471\/mecb_ubpbsu.webp","spotify":"2fxOqXRrOevcyJ4lSQbkUs","about":"playing in a galaxy, far far away ..","adress":null,"zip_code":null,"city":null},{"id":4,"name":"Bicep","email":"bicep@mail.com","email_verified_at":null,"role":"artist","api_token":null,"created_at":"2023-06-08T14:50:28.000000Z","updated_at":"2023-06-08T14:50:28.000000Z","banner":"https:\/\/res.cloudinary.com\/dnzb3s4a0\/image\/upload\/v1685624764\/bicep_teevng.jpg","spotify":"2aJDlirz6v2a4HREki98cP","about":"Bicep are an electronic music production and DJ duo from Belfast, Northern Ireland, consisting of Andrew Ferguson and Matthew McBriar.","adress":null,"zip_code":null,"city":null},{"id":5,"name":"The Rapture","email":"therapture@mail.com","email_verified_at":null,"role":"artist","api_token":null,"created_at":"2023-06-08T14:51:09.000000Z","updated_at":"2023-06-08T14:51:09.000000Z","banner":"https:\/\/res.cloudinary.com\/dnzb3s4a0\/image\/upload\/v1685623334\/therapturebanner_eh2qjd.jpg","spotify":"404DP2UA4stW8PTuKuSkx1","about":"The Rapture is an American rock band from New York City, formed in 1998. The band currently consists of Luke Jenner (lead vocals, guitar), Vito Roccoforte (drums, percussion), and Gabriel Andruzzi (keyboards, bass, saxophone, percussion).","adress":null,"zip_code":null,"city":null},{"id":7,"name":"Daft Punk","email":"daftpunk@mail.com","email_verified_at":null,"role":"artist","api_token":null,"created_at":"2023-06-08T14:53:51.000000Z","updated_at":"2023-06-08T15:04:46.000000Z","banner":"https:\/\/res.cloudinary.com\/dnzb3s4a0\/image\/upload\/v1686235571\/daft_punk_banner_u3jsk6.png","spotify":"5pgZpHqfv4TSomtkfGZGrG","about":"Daft Punk were a French electronic music duo formed in 1993 in Paris by Thomas Bangalter and Guy-Manuel de Homem-Christo. They achieved popularity in the late 1990s as part of the French house movement.","adress":null,"zip_code":null,"city":null},{"id":8,"name":"Stardust","email":"stardust@mail.com","email_verified_at":null,"role":"artist","api_token":null,"created_at":"2023-06-08T14:55:38.000000Z","updated_at":"2023-06-08T15:05:13.000000Z","banner":"https:\/\/res.cloudinary.com\/dnzb3s4a0\/image\/upload\/v1686235570\/stardustbanner_bbhoc0.png","spotify":"1mv4lh1rW1K6xhxhJmEezy","about":"Music Sounds Better with You is the only song by the French house trio Stardust, released on 20 July 1998. Stardust comprised the producer Thomas Bangalter, the DJ Alan Braxe and the vocalist Benjamin Diamond.","adress":null,"zip_code":null,"city":null},{"id":9,"name":"DJ Mehdi","email":"djmehdi@mail.com","email_verified_at":null,"role":"artist","api_token":null,"created_at":"2023-06-08T14:56:54.000000Z","updated_at":"2023-06-08T15:05:58.000000Z","banner":"https:\/\/res.cloudinary.com\/dnzb3s4a0\/image\/upload\/v1686235570\/djmehdibanner_grjrin.jpg","spotify":"4oyQ6vDzJMFYhmO9p5qrjE","about":"Mehdi Fav\u00e9ris-Essadi (20 January 1977 \u2013 13 September 2011), better known by his stage name DJ Mehdi, was a French hip hop and house music producer and DJ.","adress":null,"zip_code":null,"city":null},{"id":10,"name":"artistest","email":"artistest@mail.fr","email_verified_at":null,"role":"artist","api_token":"C7wS7ge4Dj2ImHnrNX1UDYuqr9kOXf9eyF8MniGosMhWRU1zVMG0uKV733xN","created_at":"2023-06-09T08:15:36.000000Z","updated_at":"2023-06-09T10:23:13.000000Z","banner":"https:\/\/www.afrocharts.com\/images\/song_cover.png","spotify":null,"about":null,"adress":null,"zip_code":null,"city":null}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/artistbyid/{id}'
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the artistbyid.'
+        required: true
+        example: ut
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: ut
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/artistbyname/{name}'
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: dolores
+        type: string
+        custom: []
+    cleanUrlParameters:
+      name: dolores
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '53'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/artist
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/artist/{id}'
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the artist.'
+        required: true
+        example: sed
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: sed
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/artist/{id}'
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the artist.'
+        required: true
+        example: minus
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: minus
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/artist/genre/{genre}'
+    metadata:
+      groupName: 'ARTIST '
+      groupDescription: |-
+
+        APIs to manage the Artists.
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      genre:
+        name: genre
+        description: 'The genre.'
+        required: true
+        example: aliquam
+        type: string
+        custom: []
+    cleanUrlParameters:
+      genre: aliquam
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '51'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

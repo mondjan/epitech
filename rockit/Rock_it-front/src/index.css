@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* #banner {
+	background-image: url("https://res.cloudinary.com/didthhgmq/image/upload/v1686217588/concert_cti3lg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+.navbar {
+	background-color: rgb(71 85 105);
+}
+
+.Table {
+	background-color: rgb(71 85 105);
+	@apply mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52;
+}
+
+.homePage {
+	background-color: rgb(0 0 0);
+	@apply grid grid-cols-6 gap-x-1 gap-y-1 flex-1;
+}
+
+.dropDownPage {
+	background-color: rgb(0 0 0);
+}
+
+.buttonColor{
+	@apply btn m-1 bg-slate-100 text-slate-950;
+}
+
+.displayArtistCards {
+	@apply image-full;
+}
+
+.test{
+	background-color: rgb(71 85 105);
+}
+
+.titleModal{
+	@apply text-center text-2xl my-10;
+}
